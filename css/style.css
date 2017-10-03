@@ -1,42 +1,49 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
 }
 
 *, *:before, *:after {
   box-sizing: border-box;
 }
 
+a {
+  color: black;
+}
+
 header {
-  height: 400px;
+  height: 437px;
   width: 100%;
   position: relative;
 }
 
-.logo {
-  position: absolute;
-  z-index: 2;
-  margin: 0 auto;
-
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
+section {
+  padding: 10px 20%;
 }
 
-.plate {
+section p {
+  margin: 10px 0;
+  line-height: 1.5em;
+}
+
+main {
+  font-size: 20px;
+  text-align: left;
+}
+
+.where {
   border: 3px solid white;
   text-transform: uppercase;
   color: #F7DA03;
   font-size: 42px;
-  padding: 5px 15px;
-  position: absolute;
-  bottom: 30px;
-  left: 20vw;
+  letter-spacing: .1em;
+  display: inline-block;
+  padding: .1em .3em;
   z-index: 2;
 }
 
-.plate:before, .plate:after {
+.where:before, .where:after {
   content: '';
   position: absolute;
   height: 30px;
@@ -45,12 +52,43 @@ header {
   background-color: white;
 }
 
-.plate:before {
+.where:before {
   left: 5px;
 }
 
-.plate:after {
+.where:after {
   right: 5px;
+}
+
+.schoolhouse {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+
+.logo {
+  position: absolute;
+  z-index: 2;
+  width: 175px;
+  height: 175px;
+  top: 50%;
+  right: 20%;
+  transform: translateY(-50%);
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottom .where {
+  position: absolute;
+  bottom: 60px;
+  left: 20%;
 }
 
 .bg {
@@ -61,7 +99,7 @@ header {
   filter: blur(2px);
 }
 
-h2 {
+.since {
   display: block;
   background-color: #F7DA03;
   position: relative;
@@ -71,7 +109,63 @@ h2 {
   font-weight: 200;
   letter-spacing: 4px;
   padding: 10px 20px;
-  font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
   font-size: 15px;
 }
 
+.container {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.events {
+  background-color: #303030;
+  color: white;
+  padding: 30px 20%;
+}
+
+.events .where {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+  header {
+    height: 300px;
+  }
+
+  section {
+    padding: 10px 5%;
+  }
+
+  .events {
+    padding: 30px 5%;
+  }
+
+  .bg {
+    filter: none;
+    height: calc(300px - 27px);
+  }
+
+  .schoolhouse {
+    display: none;
+  }
+
+  .where {
+    text-align: center;
+  }
+
+  .bottom .where {
+    display: none;
+  }
+
+  .logo {
+    right: 50%;
+    transform: translate(50%, calc(-50% - 27px));
+  }
+
+}
