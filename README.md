@@ -1,7 +1,6 @@
 kyiv
 ====
 [![Gitter](https://badges.gitter.im/nodeschool/kyiv.svg)](https://gitter.im/nodeschool/kyiv?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![ghit.me](https://ghit.me/badge.svg?repo=nodeschool/kyiv)](https://ghit.me/repo/nodeschool/kyiv)
 
 Organizing nodeschool events in [Kyiv/Kiev](https://www.google.com.ua/maps/place/Kiev,+Kyiv+city), Ukraine.
 
