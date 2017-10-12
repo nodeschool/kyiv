@@ -18,6 +18,65 @@ header {
   position: relative;
 }
 
+.next-event-banner {
+  z-index: 2;
+  position: absolute;
+  height: 250px;
+  padding-top: 25px;
+  width: 400px;
+  background-color: rgba(118, 214, 95, .8);
+  left: 3%;
+  top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  border-radius: 5px;
+}
+
+.next-event-banner h1 {
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.info p {
+  margin: 10px 20px;
+  font-size: 20px;
+}
+
+.sign-up {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sign-up a {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  color: white;
+  padding: 14px 0;
+  text-decoration: none;
+  background-color: rgb(46, 204, 113);
+  transition: 250ms background-color ease-in-out;
+}
+
+.sign-up a:first-child {
+  border-bottom-left-radius: 5px;
+  border-right: 1px solid rgb(39, 174, 96);
+}
+
+.sign-up a:last-child {
+  border-bottom-right-radius: 5px;
+  border-left: 1px solid rgb(39, 174, 96);
+}
+
+.sign-up a:hover {
+  background-color: rgb(39, 174, 96);
+}
+
 section {
   padding: 10px 20%;
 }
@@ -79,13 +138,13 @@ main {
   transform: translateY(-50%);
 }
 
-.bottom {
+.header-bottom {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 
-.bottom .where {
+.header-bottom .where {
   position: absolute;
   bottom: 60px;
   left: 20%;
@@ -133,6 +192,45 @@ main {
   margin-bottom: 30px;
 }
 
+.events .event a {
+  color: white;
+}
+
+@media (max-width: 1280px) {
+  .schoolhouse {
+    display: none;
+  }
+
+  .logo {
+    right: auto;
+    left: 25%;
+    transform: translate(-25%, calc(-50% - 27px));
+  }
+
+  .next-event-banner {
+    left: auto;
+    right: 25%;
+    transform: translate(25%, calc(-50% - 37px));
+    top: 50%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .next-event-banner {
+    left: auto;
+    right: 15%;
+    transform: translate(15%, calc(-50% - 37px));
+    top: 50%;
+  }
+
+  .logo {
+    right: auto;
+    left: 15%;
+    transform: translate(-15%, calc(-50% - 27px));
+  }
+
+}
+
 @media (max-width: 800px) {
   header {
     height: 300px;
@@ -151,21 +249,21 @@ main {
     height: calc(300px - 27px);
   }
 
-  .schoolhouse {
-    display: none;
-  }
-
   .where {
     text-align: center;
   }
 
-  .bottom .where {
+  .header-bottom .where {
     display: none;
   }
 
   .logo {
-    right: 50%;
-    transform: translate(50%, calc(-50% - 27px));
+    right: auto;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 27px));
   }
 
+  .next-event-banner {
+    display: none;
+  }
 }
