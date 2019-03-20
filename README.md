@@ -7,4 +7,4 @@ Organizing nodeschool events in [Kyiv/Kiev](https://www.google.com.ua/maps/place
 Events
 ======
 
-We held our first nodeschool on June 21, 2014 @ Cogniance.
+We held our first nodeschool on June 21, 2014 @ Star.
