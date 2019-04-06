@@ -1,10 +1,11 @@
-kyiv
-====
-[![Gitter](https://badges.gitter.im/nodeschool/kyiv.svg)](https://gitter.im/nodeschool/kyiv?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+# NodeSchool Kyiv 🇺🇦
 
-Organizing nodeschool events in [Kyiv/Kiev](https://www.google.com.ua/maps/place/Kiev,+Kyiv+city), Ukraine.
+NodeSchool is a series of open source [workshoppers](http://nodeschool.io/) that
+teach web software skills.
 
-Events
-======
+NodeSchool meetups like NodeSchoolKyiv provide a space for people to do the
+workshoppers on their own or with others. The workshopper tutorials are used as
+the course curriculum, while mentors are here to help attendees work through
+challenges. Learn more [here](http://nodeschool.io/kyiv/).
 
-We held our first nodeschool on June 21, 2014 @ Star.
+
